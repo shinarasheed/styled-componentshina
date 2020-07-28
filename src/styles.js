@@ -27,3 +27,21 @@ export const setBackground = ({
   
   `;
 };
+
+export const setRem = (number = 16) => {
+  return `
+  ${number / 16}rem`;
+};
+
+export const setLetterSpacing = (number = 2) => {
+  return `letter-spacing:${number}px`;
+};
+
+// always pass a default object if you are passing in nothing
+export const setBorder = ({
+  width = "2px",
+  style = "solid",
+  color = "black",
+} = {}) => {
+  return `border:${width} ${style} ${color}`;
+};
