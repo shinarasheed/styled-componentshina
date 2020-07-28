@@ -27,7 +27,7 @@ const fadeIn = (start, point, end) => {
 `;
 
   return css`
-    animation: ${animation} 3s ease-in-out;
+    animation: ${animation} 3s ease-in;
   `;
 };
 
