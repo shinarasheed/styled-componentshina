@@ -1,6 +1,12 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
-import { setColor, setRem, setLetterSpacing, setBorder } from "../../styles";
+import {
+  setColor,
+  setRem,
+  setLetterSpacing,
+  setBorder,
+  media,
+} from "../../styles";
 
 const Banner = ({ className, title, text, children, greeting }) => {
   return (
@@ -39,13 +45,14 @@ const BannerWrapper = styled(Banner)`
     margin: 0 auto;
   }
 
-  @media (min-width: 768px) {
-    width: 70vw;
+  ${media.tablet`
+  width: 70vw;
     ${setBorder({ width: "6px", color: setColor.primaryColor })};
     p {
       width: 75%;
     }
-  }
+
+`}
 `;
 
 export default BannerWrapper;
