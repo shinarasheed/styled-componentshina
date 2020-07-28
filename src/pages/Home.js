@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/home/Header";
+// import GlobalStyles from "../components/globals/GlobalStyles";
 
 const Home = () => {
   return (
