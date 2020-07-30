@@ -17,7 +17,6 @@ body{
   color: ${setColor.mainBlack}; 
   background:#fff;
   background: ${setColor.mainwhite};
-  font-family: 'Lato', sans-serif;
   ${setFont.mainFont};
  }
 h1 { font-size: 3em; line-height: 1.2; margin-bottom: 0.5em; }
