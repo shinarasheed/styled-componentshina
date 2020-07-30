@@ -37,7 +37,7 @@ const About = () => {
 const AboutCenter = styled.div`
   .about-img,
   .about-info {
-    padding: ${setRem(30)};
+    padding: ${setRem(0)};
   }
 
   .about-img {
@@ -62,9 +62,9 @@ const AboutCenter = styled.div`
   max-width:1170px;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: ${setRem(32)};
+  column-gap: ${setRem(80)};
 
-  .about-img{
+  .about-img, .about-info{
     align-self:center;
   }
 
