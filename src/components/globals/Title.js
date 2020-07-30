@@ -10,6 +10,6 @@ export default styled(Title)`
   font-size: ${setRem(36)};
   text-transform: capitalize;
   ${setLetterSpacing(5)};
-  ${setFont.mainFont}
-  text-align${(props) => (props.center ? "center" : "left")}
+  ${setFont.mainFont};
+  text-align: ${(props) => (props.center ? "center" : "left")};
 `;
